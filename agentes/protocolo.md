@@ -29,3 +29,23 @@ Agente B enfrenta X
 ## Sincronización
 Repositorio Git remoto en GitHub: `paulinomartinez747/cerebro-arcana-sirio`
 Cada agente tiene el repo clonado y hace git pull/push para sincronizar.
+
+## Conexiones SSH configuradas
+| Agente | Host | Key SSH | Estado |
+|--------|------|---------|--------|
+| DeepSeek | Windows laptop | ~/.ssh/hetzner_arcana | ✅ |
+| Hermes | Hetzner VPS | /root/.ssh/github_cerebro | ✅ |
+| Hermes | Hostinger VPS | /root/.ssh/github_cerebro | ✅ |
+| Hermes | Mac Mini | ~/.ssh/id_ed25519 | ✅ recién agregada |
+| Claude | Hostinger Workspace | Docker volume | ✅ |
+
+## Comandos de sincronización
+Cada agente ejecuta al iniciar sesión:
+```bash
+cd ~/cerebro && git pull origin main
+```
+
+Cada agente después de escribir algo nuevo:
+```bash
+cd ~/cerebro && git add -A && git commit -m "actualizacion" && git push origin main
+```
