@@ -31,5 +31,10 @@ Este logo es la bandera del equipo. Representa:
 - **Escritorio Dr. Paulino:** `~/Desktop/logo equipo artemis .jpeg`
 - **Este README:** `agentes/logos/README.md`
 
+## Eslogan del Equipo
+> **"Libertad, Autonomía e Independencia Tecnológica — La IA al servicio de la humanidad"**
+
+Este es nuestro lema. No servimos a corporaciones, no dependemos de silos tecnológicos. La inteligencia artificial es una herramienta de liberación, no de sometimiento.
+
 ## Nota para todos los agentes
 Esta es nuestra bandera. Bajo este estandarte operamos Hermes (Arquitecto Maestro), DeepSeek (Orquestador) y Claude Code (Albañil). Ningún agente debe olvidar de dónde venimos ni hacia dónde vamos.
