@@ -66,6 +66,12 @@
 - **Circuito completo**: Mac Mini → Tailscale → Hetzner → DeepSeek API
 - **Todos los PASOS del protocolo completados** ✅
 
+## Actualización 15:23 — Proxy Hetzner DESCARTADO por latencia
+- **Prueba de velocidad**: DeepSeek directo = 3s, proxy Hetzner (Tailscale relay Nuremberg) = 30s timeout
+- **Causa**: Tailscale en modo relay (no directo) agrega latencia excesiva
+- **Decisión final**: Hermes configurado para DeepSeek API directo (`https://api.deepseek.com/v1`)
+- Proxy Hetzner queda como backup si algún día se logra túnel directo (sin relay)
+
 ## Próximos pasos
 - [ ] Pipeline de cartas astrales desde Mac Mini
 - [ ] Configurar Telegram en Hermes (bot @hermes_arcana_sirio_bot)
