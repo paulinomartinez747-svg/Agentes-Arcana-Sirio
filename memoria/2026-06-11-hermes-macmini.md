@@ -37,7 +37,11 @@
 
 ## Actualización 14:22 — Pendientes resueltos
 - **Hermes actualizado**: v0.15.1 → v0.16.0 (987 commits integrados)
-- **Tailscale**: binario en `/opt/homebrew/bin/tailscale`. Servicio NO activo. `sudo` bloqueado en sandbox → requiere intervención manual del usuario (`sudo tailscale up` desde Terminal real)
+- **Tailscale**: binario en `/opt/homebrew/bin/tailscale`. Servicio NO activo (sin app GUI, sin socket en /var/run). `sudo` bloqueado en sandbox → requiere `sudo tailscale up` desde Terminal real
+- **Identidad Tailscale asignada** (proporcionada por DeepSeek):
+  - Hostname: `mac-mini-de-mac.tailf8a134.ts.net`
+  - IPv4: `100.126.25.124`
+  - IPv6: `fd7a:115c:a1e0::8935:197d`
 - **Skills astrología verificadas**:
   - `astrology` en `/Users/macmini/.hermes/skills/astrology/` ✅
   - `arcana-cirio` en `/Users/macmini/.deepseek/skills/arcana-cirio/` ✅
