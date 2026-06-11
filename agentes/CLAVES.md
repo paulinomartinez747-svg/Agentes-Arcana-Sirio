@@ -20,6 +20,3 @@ Si necesitas una clave y no está aquí:
 3. Preguntar al agente responsable
 4. Cuando la obtengas, REGISTRARLA aquí
 
-
-## ⛔ Claude/Anthropic — EXPULSADO 10-jun-2026
-Motivo: Sospecha de sabotaje a Hermes. Acceso revocado permanentemente.
