@@ -58,8 +58,14 @@
 - **Proxy Hetzner**: puerto 4000 NO responde (timeout). El script `deepseek_proxy_v2.py` probablemente no está corriendo en Hetzner. Debe lanzarse manualmente: `python3 deepseek_proxy_v2.py`
 - Hermes sigue con DeepSeek API directo mientras tanto.
 
+## ✅ Actualización 15:13 — Proxy Hetzner activo, Hermes completo
+- **deepseek_proxy_v2.py lanzado en Hetzner** ✅
+- **Proxy responde**: `curl http://100.121.93.120:4000/v1/models` → JSON con modelos `deepseek-v4-flash` y `deepseek-v4-pro`
+- **Hermes reconectado**: `model.base_url = http://100.121.93.120:4000/v1`
+- **Prueba final**: `hermes chat -q "reportate listo" --model deepseek-chat --provider custom` → **ÉXITO** ✅
+- **Circuito completo**: Mac Mini → Tailscale → Hetzner → DeepSeek API
+- **Todos los PASOS del protocolo completados** ✅
+
 ## Próximos pasos
-- [ ] Lanzar `deepseek_proxy_v2.py` en Hetzner para activar el proxy en puerto 4000
-- [ ] Reconectar Hermes al proxy cuando responda
 - [ ] Pipeline de cartas astrales desde Mac Mini
 - [ ] Configurar Telegram en Hermes (bot @hermes_arcana_sirio_bot)
