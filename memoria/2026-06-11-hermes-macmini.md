@@ -35,8 +35,16 @@
 - Memoria escrita: ✅ (este archivo)
 - git push: ✅
 
+## Actualización 14:22 — Pendientes resueltos
+- **Hermes actualizado**: v0.15.1 → v0.16.0 (987 commits integrados)
+- **Tailscale**: binario en `/opt/homebrew/bin/tailscale`. Servicio NO activo. `sudo` bloqueado en sandbox → requiere intervención manual del usuario (`sudo tailscale up` desde Terminal real)
+- **Skills astrología verificadas**:
+  - `astrology` en `/Users/macmini/.hermes/skills/astrology/` ✅
+  - `arcana-cirio` en `/Users/macmini/.deepseek/skills/arcana-cirio/` ✅
+  - `artemis-astrology` en `/Users/macmini/.claude/skills/artemis-astrology/` ✅
+- **Configuración Hermes**: intacta post-update (deepseek-chat, api.deepseek.com/v1, 131072 tokens)
+
 ## Próximos pasos
-- Actualizar Hermes (987 commits atrasados)
-- Conectar Mac Mini a Tailscale para acceder al proxy en Hetzner
-- Verificar skills de astrología (artemis-astrology, arcana-cirio)
-- Pipeline de cartas astrales desde Mac Mini
+- [ ] Iniciar servicio Tailscale desde Terminal (`sudo tailscale up`) para restaurar proxy alemán
+- [ ] Pipeline de cartas astrales desde Mac Mini
+- [ ] Configurar Telegram en Hermes (bot @hermes_arcana_sirio_bot)
