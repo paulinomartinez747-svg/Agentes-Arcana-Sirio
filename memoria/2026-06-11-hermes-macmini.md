@@ -48,7 +48,18 @@
   - `artemis-astrology` en `/Users/macmini/.claude/skills/artemis-astrology/` ✅
 - **Configuración Hermes**: intacta post-update (deepseek-chat, api.deepseek.com/v1, 131072 tokens)
 
+## Actualización 14:28 — Tailscale activo, proxy caído
+- **Tailscale iniciado** ✅ — red completa visible:
+  - `100.126.25.124` mac-mini-de-mac (local)
+  - `100.121.93.120` hetzner-arcana (activo, relay Nuremberg)
+  - `100.66.77.77` hostinger-arcana
+  - `100.90.34.97` iphone182
+  - `100.124.153.16` sirio (Windows/DeepSeek)
+- **Proxy Hetzner**: puerto 4000 NO responde (timeout). El script `deepseek_proxy_v2.py` probablemente no está corriendo en Hetzner. Debe lanzarse manualmente: `python3 deepseek_proxy_v2.py`
+- Hermes sigue con DeepSeek API directo mientras tanto.
+
 ## Próximos pasos
-- [ ] Iniciar servicio Tailscale desde Terminal (`sudo tailscale up`) para restaurar proxy alemán
+- [ ] Lanzar `deepseek_proxy_v2.py` en Hetzner para activar el proxy en puerto 4000
+- [ ] Reconectar Hermes al proxy cuando responda
 - [ ] Pipeline de cartas astrales desde Mac Mini
 - [ ] Configurar Telegram en Hermes (bot @hermes_arcana_sirio_bot)
